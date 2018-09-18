@@ -1,4 +1,5 @@
 # Skittles solution by Logan Cantin
+# 27 minutes 46 seconds
 
 # IMPORTS
 from math import ceil   #for calculating number of handfuls

@@ -6,14 +6,6 @@ time = 0
 skttls = {"orange":0, "blue":0, "green":0, "yellow":0, "pink":0, "violet":0, "brown":0, "red":0}
 
 
-def reset():
-    global time
-    global skttls
-    time = 0
-    skttls.clear()
-    skttls = {"orange":0, "blue":0, "green":0, "yellow":0, "pink":0, "violet":0, "brown":0, "red":0}
-
-
 def endoftestcase():
     global time
     global skttls
@@ -24,7 +16,9 @@ def endoftestcase():
             time += skttls["red"] * 16
 
     print(time)
-    reset()
+    
+    time = 0
+    skttls = {"orange":0, "blue":0, "green":0, "yellow":0, "pink":0, "violet":0, "brown":0, "red":0}
 
 
 for skittle in data:
